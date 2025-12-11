@@ -3,3 +3,13 @@
     line-height: 1.6;
     margin: 20px;
 }
+.gradient-heading {
+  color: navy; 
+  background: linear-gradient(to right, navy, #FFA500);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  font-size: 3em;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', sans-serif;
+}
