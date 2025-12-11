@@ -1,0 +1,8 @@
+# This is Git's per-user configuration file.
+[user]
+	email = 67991018@kmitl.ac.th
+	name = Phattvsnp
+# Please adapt and uncomment the following lines:
+#	name = Phattharaphon Aimchai
+#	email = beip@b-2.local
+
