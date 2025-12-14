@@ -42,3 +42,21 @@ function showDept(department, element) {
     // Add 'active' class to the clicked tab
     element.classList.add('active');
 }
+
+// Show or hide the go to top button based on scroll position
+window.onscroll = function () {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.querySelector(".goToTop").style.display = "block";  // Select by class
+    } else {
+        document.querySelector(".goToTop").style.display = "none";  // Select by class
+    }
+};
+
+// Function to scroll to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
