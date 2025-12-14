@@ -67,3 +67,148 @@
     right: 0;
     z-index: 1;
 }
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab {
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+}
+
+.tab:hover {
+    background: #f0f0f0;
+}
+
+.tab.active {
+    border-bottom: 4px solid #003366;
+    color: #003366;
+}
+
+.content {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    display: none;
+    border-radius: 8px;
+}
+
+.content.active {
+    display: block;
+}
+
+.dept-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.dept-text {
+    flex: 1;
+}
+
+.dept-text h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.dept-text p {
+    line-height: 1.6;
+}
+
+.dept-image {
+    flex: 1;
+    text-align: center;
+}
+
+.dept-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .dept-container {
+        flex-direction: column;
+    }
+}
+
+.gradient-heading-red-orange {
+    background: linear-gradient(to right, #c13838, #ff9933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.gradient-heading-green-orange {
+    background: linear-gradient(to right, #306f33, #FF9800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    background: linear-gradient(to top, #ffffff, #ff853e);
+    padding: 1px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;                           
+    justify-content: center;                 
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;                           
+    align-items: center;                     
+    position: absolute;                     
+    left: 100px;
+}
+
+.logo1, .logo2 {
+    height: 50px;                            
+    margin-right: 10px;
+}                    
+
+.dropdown-btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f4f6f8;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 16px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
