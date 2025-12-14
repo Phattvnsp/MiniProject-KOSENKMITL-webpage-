@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> 
     <title>Contact/Resources Page</title>
 </head>
 
@@ -15,21 +15,99 @@
         </div>
         <h1 class="gradient-heading">Contact Information and Resource</h1>
     </div>
-</body>
-<body>
-    <figure>
-        <img src="asset/mail-icons.jpg" alt="Gmail" width="70">
-        <br> <a href="http://www.kosen.kmitl.ac.th">kosen@kmitl.ac.th </a>
-        <br><img src="asset/Facebook-icons.jpg" alt="Facebook" width="70">
-        <br> <a href="https://www.facebook.com/KOSENKMITL">KOSEN-KMITL </a>
-        <br><img src="asset/phone-icons.jpg" alt="Phone" width="70">
-        <br> <a href="http://www.kosen.kmitl.ac.th">093-6633390<br>096-8059827<br>095-3982015</a>
-        <br><img src="asset/youtube-icon.jpg" alt = "Youtube" width="70">
-        <br> <a href="https://www.youtube.com/@kosenkmitl4469">KOSEN-KMITL</a>
-        <br><img src="asset/Tiktok-icon.jpg" alt = "Tiktok" width="70">
-        <br> <a href="https://www.tiktok.com/@kosen_kmitl_official?is_from_webapp=1&sender_device=pc">kosen_kmitl_official</a>
-        <br><img src="asset/googlemaps-icon.jpg" alt = "Maps" width="70">
-        <br> <a href="https://maps.app.goo.gl/3pK9Ds3oe3MXmjgT8">kosen kmitl new building</a>
-    </figure>
-</body>
+
+    <div class="contact-container">
+
+        <div class="contact-form-section">
+            <h3>Contact us</h3>
+            <form action="#" method="POST">
+                
+                <div class="name-email-group">
+                    <div class="input-container">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-input" placeholder="How can we help?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" name="message" class="form-textarea" placeholder="Tell us more about your inquiry..." required></textarea>
+                </div>
+
+                <button type="submit" class="send-button">
+                    <span class="send-icon">➤</span> Send Message
+                </button>
+            </form>
+        </div>
+
+        <div class="contact-info-section">
+            
+            <div class="contact-card">
+                <h3>Contact Information</h3>
+
+                <div class="contact-item">
+                    <div class="contact-icon-wrapper">✉</div> 
+                    <div class="contact-item-details">
+                        <strong>Email</strong>
+                        <p><a href="http://www.kosen.kmitl.ac.th">kosen@kmitl.ac.th</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon-wrapper">📞</div> 
+                    <div class="contact-item-details">
+                        <strong>Phone</strong>
+                        <div class="phone-numbers">
+                            <a href="http://www.kosen.kmitl.ac.th">093-6633390</a>
+                            <a href="http://www.kosen.kmitl.ac.th">096-8059827</a>
+                            <a href="http://www.kosen.kmitl.ac.th">095-3982015</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon-wrapper">📍</div> 
+                    <div class="contact-item-details">
+                        <strong>Address & Maps</strong>
+                        <p>KMITL Convention Hall (opposite KMITL Central Library, 1 Chalong Krung 1 Alley, Lat Krabang, Bangkok 10520)</p> 
+                        <p>
+                            <a href="https://maps.app.goo.gl/3pK9Ds3oe3MXmjgT8">kosen kmitl new building</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon-wrapper">🌐</div> 
+                    <div class="contact-item-details">
+                        <strong class="social-label">Social Media</strong>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/KOSENKMITL">Facebook: KOSEN-KMITL</a>
+                            <a href="https://www.youtube.com/@kosenkmitl4469">Youtube: KOSEN-KMITL</a>
+                            <a href="https://www.tiktok.com/@kosen_kmitl_official?is_from_webapp=1&sender_device=pc">Tiktok: kosen_kmitl_official</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="business-hours-card">
+                <h3>Business Hours</h3>
+                <ul class="hours-list">
+                    <li><span>Monday - Friday:</span> <strong>9:00 AM - 6:00 PM</strong></li>
+                    <li><span>Saturday & Sunday:</span> <strong>Closed</strong></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    </body>
 </html>

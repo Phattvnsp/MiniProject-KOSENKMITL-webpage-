@@ -230,3 +230,215 @@
 .goToTop:hover {
     background-color: #0056b3;
 }
+
+.contact-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #d6eaff; 
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
+.contact-form-section {
+    flex: 2; 
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-section {
+    flex: 1; 
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form-section h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #343a40;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.name-email-group {
+    display: flex;
+    gap: 20px;
+}
+
+.input-container {
+    flex: 1;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus, .form-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.send-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ef844b;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-button:hover {
+    background-color: #ef844b;
+}
+
+.send-icon {
+    margin-right: 10px;
+}
+
+
+.contact-card, .business-hours-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.business-hours-card {
+    background-color: #ef844b; 
+    color: white;
+}
+
+.contact-card h3, .business-hours-card h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-icon-wrapper {
+    background-color: #f1f3f5;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+    color: #0b4580; 
+}
+
+.contact-item-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item-details strong {
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 3px;
+}
+
+.contact-item-details p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.contact-item-details .phone-numbers a, 
+.contact-item-details .social-links a, 
+.contact-item-details p a {
+    color: #007bff;
+    text-decoration: none;
+    display: block; 
+    margin-top: 2px;
+}
+.contact-item-details .phone-numbers a {
+    color: #6c757d; 
+}
+.contact-item-details .social-links a {
+    color: #6c757d; 
+}
+.contact-item-details strong.social-label {
+    margin-top: 10px; 
+    display: block;
+    color: #343a40;
+}
+
+
+.business-hours-card .hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.business-hours-card .hours-list li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.business-hours-card .hours-list li strong {
+    font-weight: normal;
+}
+
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        margin: 30px 15px;
+        gap: 20px;
+    }
+
+    .contact-form-section, .contact-info-section {
+        flex: none;
+        width: 100%;
+        min-width: auto;
+    }
+}
+@media (max-width: 576px) {
+    .name-email-group {
+        flex-direction: column;
+        gap: 0;
+    }
+    .contact-form-section {
+        padding: 20px;
+    }
+    .contact-card, .business-hours-card {
+        padding: 20px;
+    }
+}
