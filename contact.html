@@ -9,16 +9,17 @@
 
 <body class="main-body-style">
     <div class="banner">
-        <div class="logo-container">
-            <img src="asset/logo.png" alt="Logo 1" class="logo1">
-            <img src="asset/logo1.png" alt="Logo 2" class="logo2">
-        </div>
         <h1 class="gradient-heading">Contact Information and Resource</h1>
     </div>
-
+    <div id="top"></div>
+    <a href="index.html" class="home-button">
+        <img src="asset/homepage.png" alt="Home" class="home-icon">
+    </a>
     <div class="contact-container">
+        <div class="contact-form-section" style="position: relative; padding-top: 60px; border: 1px solid #ccc; padding: 20px;">
 
-        <div class="contact-form-section">
+            <img src="asset/logo.png" alt="Logo" style="position: absolute; top: 15px; right: 15px; height: 45px;">
+
             <h3>Contact us</h3>
             <form action="#" method="POST">
                 
@@ -109,5 +110,13 @@
             
         </div>
     </div>
+    <div class="quick-links-footer">
+        <h3>Quick Links</h3>
+        <div class="footer-links">
+            <a href="structure.html">Curriculum</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </body>
+<button class="goToTop" onclick="scrollToTop()">Go to Top</button>
+<script src="script.js"></script>
 </html>

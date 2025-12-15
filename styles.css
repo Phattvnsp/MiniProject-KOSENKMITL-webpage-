@@ -445,12 +445,13 @@
 
 .button-overlay {
     position: absolute; 
-    top: 80%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: center;
     width: 100%;
+    font-family: Arial, sans-serif;
 }
 
 .overlay-button {
@@ -461,25 +462,78 @@
     border-radius: 8px;
     font-size: 1.1em;
     font-weight: bold;
-    color: white; 
+    color: rgb(255, 123, 0); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .primary-btn {
-    background-color: #007bff; 
+    background-color: #ffffff; 
 }
 
 .primary-btn:hover {
-    background-color: #0056b3;
+    background-color: #071e43;
     transform: translateY(-2px);
 }
 
 .secondary-btn {
-    background-color: #28a745; 
+    background-color: #ffffff; 
 }
 
 .secondary-btn:hover {
-    background-color: #1e7e34;
+    background-color: #071e43;
     transform: translateY(-2px);
+}
+
+.home-button {
+    position: fixed;
+    top: 50px;
+    right: 30px;
+    background: none;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+}
+
+.home-button:hover {
+    background: linear-gradient(45deg, #ffb347, #ff7a18);
+}
+
+.home-button .home-icon {
+    width: 100%;  /* Icon size */
+    height: 100%;
+    object-fit: contain;  /* Ensure the icon fits inside the button */
+}
+
+.quick-links-footer {
+    background-color: rgb(16, 16, 38);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 50px;
+}
+
+.quick-links-footer h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.quick-links-footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.quick-links-footer .footer-links a:hover {
+    color: #ff853e;
+    text-decoration: underline;
 }
