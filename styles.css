@@ -506,9 +506,9 @@
 }
 
 .home-button .home-icon {
-    width: 100%; 
+    width: 100%;  /* Icon size */
     height: 100%;
-    object-fit: contain;
+    object-fit: contain;  /* Ensure the icon fits inside the button */
 }
 
 .quick-links-footer {
